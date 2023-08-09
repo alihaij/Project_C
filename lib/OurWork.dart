@@ -22,7 +22,6 @@ class _OurWorkState extends State {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -56,387 +55,370 @@ class _OurWorkState extends State {
                 onPressed: () {
                   // handle the press
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ContactUs())
-                    );
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ContactUs()));
                 },
               ),
             ),
           ],
         ),
-        body: SafeArea(
-          child: ListView(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(30.0),
-                child: Center(
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Card(
-                            color: Color(0xffC1D5DD),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: SizedBox(
-                              height: 230,
-                              width: 170,
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Image(
-                                      image: AssetImage('assets/company 1.jpg'),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text(
-                                      'Legal Services Website',
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'workSans',
-                                        color: Color(0xff333E50),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: ElevatedButton(
-                                      child: Text("Read More"),
-                                      style: ElevatedButton.styleFrom(
-                                        primary: Color(0xff2BBFB0),
-                                        elevation: 15,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                      ),
-                                      onPressed: () {
-                                        //////////
-                                        Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const OurWorkDetail()),
-                                        );
-                                      },
-                                    ),
-                                  ),
-                                ],
-                              ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Card(
+                  color: Color(0xffC1D5DD),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: SizedBox(
+                    height: 230,
+                    width: 170,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(
+                            image: AssetImage('assets/company 1.jpg'),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text(
+                            'Legal Services Website',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'workSans',
+                              color: Color(0xff333E50),
                             ),
                           ),
-                          ///////////////////////////////////////////////////////////
-                          Card(
-                            color: Color(0xffC1D5DD),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: SizedBox(
-                              height: 230,
-                              width: 170,
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Center(
-                                      child: Image(
-                                        image:
-                                            AssetImage('assets/company 1.jpg'),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Center(
-                                      child: Text(
-                                        'Legal Services Website',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'workSans',
-                                          color: Color(0xff333E50),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Center(
-                                      child: ElevatedButton(
-                                        child: Text("Read More"),
-                                        style: ElevatedButton.styleFrom(
-                                          primary: Color(0xff2BBFB0),
-                                          elevation: 15,
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10.0),
-                                          ),
-                                        ),
-                                        onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      const OurWorkDetail()));
-                                        },
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ElevatedButton(
+                            child: Text("Read More"),
+                            style: ElevatedButton.styleFrom(
+                              primary: Color(0xff2BBFB0),
+                              elevation: 15,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
                               ),
                             ),
+                            onPressed: () {
+                              //////////
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const OurWorkDetail()),
+                              );
+                            },
                           ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Card(
-                            color: Color(0xffC1D5DD),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: SizedBox(
-                              height: 230,
-                              width: 170,
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Image(
-                                      image: AssetImage('assets/company 1.jpg'),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text(
-                                      'Legal Services Website',
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'workSans',
-                                        color: Color(0xff333E50),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: ElevatedButton(
-                                      child: Text("Read More"),
-                                      style: ElevatedButton.styleFrom(
-                                        primary: Color(0xff2BBFB0),
-                                        elevation: 15,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                      ),
-                                      onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      const OurWorkDetail()));
-                                        },
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          ///////////////////////////////////////////////////////////
-                          Card(
-                            color: Color(0xffC1D5DD),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: SizedBox(
-                              height: 230,
-                              width: 170,
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Center(
-                                      child: Image(
-                                        image:
-                                            AssetImage('assets/company 1.jpg'),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Center(
-                                      child: Text(
-                                        'Legal Services Website',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'workSans',
-                                          color: Color(0xff333E50),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Center(
-                                      child: ElevatedButton(
-                                        child: Text("Read More"),
-                                        style: ElevatedButton.styleFrom(
-                                          primary: Color(0xff2BBFB0),
-                                          elevation: 15,
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10.0),
-                                          ),
-                                        ),
-                                        onPressed: () {
-                                          //////////
-                                           Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const OurWorkDetail()),
-                                        );
-                                        },
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Card(
-                            color: Color(0xffC1D5DD),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: SizedBox(
-                              height: 230,
-                              width: 170,
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Image(
-                                      image: AssetImage('assets/company 1.jpg'),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text(
-                                      'Legal Services Website',
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'workSans',
-                                        color: Color(0xff333E50),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: ElevatedButton(
-                                      child: Text("Read More"),
-                                      style: ElevatedButton.styleFrom(
-                                        primary: Color(0xff2BBFB0),
-                                        elevation: 15,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                      ),
-                                      onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      const OurWorkDetail()));
-                                        },
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          ///////////////////////////////////////////////////////////
-                          Card(
-                            color: Color(0xffC1D5DD),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: SizedBox(
-                              height: 230,
-                              width: 170,
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Center(
-                                      child: Image(
-                                        image:
-                                            AssetImage('assets/company 1.jpg'),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Center(
-                                      child: Text(
-                                        'Legal Services Website',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'workSans',
-                                          color: Color(0xff333E50),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Center(
-                                      child: ElevatedButton(
-                                        child: Text("Read More"),
-                                        style: ElevatedButton.styleFrom(
-                                          primary: Color(0xff2BBFB0),
-                                          elevation: 15,
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10.0),
-                                          ),
-                                        ),
-                                       onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      const OurWorkDetail()));
-                                        },
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ], //main coulumn childrens
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
+                ///////////////////////////////////////////////////////////
+                Card(
+                  color: Color(0xffC1D5DD),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: SizedBox(
+                    height: 230,
+                    width: 170,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Center(
+                            child: Image(
+                              image: AssetImage('assets/company 1.jpg'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: Text(
+                              'Legal Services Website',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'workSans',
+                                color: Color(0xff333E50),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: ElevatedButton(
+                              child: Text("Read More"),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color(0xff2BBFB0),
+                                elevation: 15,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const OurWorkDetail()));
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Card(
+                  color: Color(0xffC1D5DD),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: SizedBox(
+                    height: 230,
+                    width: 170,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(
+                            image: AssetImage('assets/company 1.jpg'),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text(
+                            'Legal Services Website',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'workSans',
+                              color: Color(0xff333E50),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ElevatedButton(
+                            child: Text("Read More"),
+                            style: ElevatedButton.styleFrom(
+                              primary: Color(0xff2BBFB0),
+                              elevation: 15,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const OurWorkDetail()));
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                ///////////////////////////////////////////////////////////
+                Card(
+                  color: Color(0xffC1D5DD),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: SizedBox(
+                    height: 230,
+                    width: 170,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Center(
+                            child: Image(
+                              image: AssetImage('assets/company 1.jpg'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: Text(
+                              'Legal Services Website',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'workSans',
+                                color: Color(0xff333E50),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: ElevatedButton(
+                              child: Text("Read More"),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color(0xff2BBFB0),
+                                elevation: 15,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                              onPressed: () {
+                                //////////
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const OurWorkDetail()),
+                                );
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Card(
+                  color: Color(0xffC1D5DD),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: SizedBox(
+                    height: 230,
+                    width: 170,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(
+                            image: AssetImage('assets/company 1.jpg'),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text(
+                            'Legal Services Website',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'workSans',
+                              color: Color(0xff333E50),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ElevatedButton(
+                            child: Text("Read More"),
+                            style: ElevatedButton.styleFrom(
+                              primary: Color(0xff2BBFB0),
+                              elevation: 15,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const OurWorkDetail()));
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                ///////////////////////////////////////////////////////////
+                Card(
+                  color: Color(0xffC1D5DD),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: SizedBox(
+                    height: 230,
+                    width: 170,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Center(
+                            child: Image(
+                              image: AssetImage('assets/company 1.jpg'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: Text(
+                              'Legal Services Website',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'workSans',
+                                color: Color(0xff333E50),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: ElevatedButton(
+                              child: Text("Read More"),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color(0xff2BBFB0),
+                                elevation: 15,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const OurWorkDetail()));
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
 
         //buttonbar
@@ -455,7 +437,7 @@ class _OurWorkState extends State {
                   IconButton(
                     icon: Icon(Icons.home_rounded),
                     iconSize: 35,
-                    color:  Color(0xff333E50),
+                    color: Color(0xff333E50),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -470,7 +452,7 @@ class _OurWorkState extends State {
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'workSans',
-                      color:  Color(0xff333E50),
+                      color: Color(0xff333E50),
                     ),
                   ),
                 ],

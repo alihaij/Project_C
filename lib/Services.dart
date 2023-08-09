@@ -17,11 +17,8 @@ class Services extends StatefulWidget {
 }
 
 class _ServicesState extends State {
-  
-
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -80,44 +77,45 @@ class _ServicesState extends State {
                 ),
                 SingleChildScrollView(
                   scrollDirection: Axis.vertical,
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            ServicesBox('Mobile Apps', appOverview,
-                                'assets/mobile pic.png'),
-                            ServicesBox('Web Development', webOverview,
-                                'assets/web pic.png'),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            ServicesBox('Game Development', GameOverview,
-                                'assets/game development pic.jpg'),
-                            ServicesBox('E-Commerce', EcomrOverview,
-                                'assets/E-com.jpg'),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            ServicesBox('Business Solutions', BSOverview,
-                                'assets/BS.jpg'),
-                            ServicesBox('Content Management', CMOverview,
-                                'assets/CM.jpg'),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            ServicesBox('Digital Marketing', DMOverview,
-                                'assets/DM.jpg'),
-                            ServicesBox('Software Development', SWDOverview,
-                                'assets/SW.jpg'),
-                          ],
-                        ),
-                      ],
-                    ),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ServicesBox('Mobile Apps', appOverview,
+                              'assets/mobile pic.png'),
+                          ServicesBox('Web Development', webOverview,
+                              'assets/web pic.png'),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ServicesBox('Game Development', GameOverview,
+                              'assets/game development pic.jpg'),
+                          ServicesBox(
+                              'E-Commerce', EcomrOverview, 'assets/E-com.jpg'),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ServicesBox('Business Solutions', BSOverview,
+                              'assets/BS.jpg'),
+                          ServicesBox('Content Management', CMOverview,
+                              'assets/CM.jpg'),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ServicesBox(
+                              'Digital Marketing', DMOverview, 'assets/DM.jpg'),
+                          ServicesBox('Software Development', SWDOverview,
+                              'assets/SW.jpg'),
+                        ],
+                      ),
+                    ],
                   ),
                 )
               ],
@@ -125,7 +123,7 @@ class _ServicesState extends State {
           ],
         )),
 
-      //buttonbar
+        //buttonbar
         bottomNavigationBar: Container(
           height: 90,
           decoration: BoxDecoration(
